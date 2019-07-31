@@ -16,7 +16,7 @@ error_exit()
 }
 
 # Create alias gtar -> tar
-ln -sf /opt/habitat-mac-bootstrapper/embedded/bin/tar /opt/habitat-mac-bootstrapper/bin/gtar || error_exit "Cannot link tar to /opt/habitat-mac-bootstrapper/bin"
+ln -sf /opt/mac-bootstrapper/embedded/bin/tar /opt/mac-bootstrapper/bin/gtar || error_exit "Cannot link tar to /opt/mac-bootstrapper/bin"
 
 echo "Thank you for installing the Habitat macOS Bootstrapper!"
 

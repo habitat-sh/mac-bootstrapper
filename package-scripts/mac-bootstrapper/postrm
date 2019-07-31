@@ -8,8 +8,8 @@
 # - if you are under 40, get peer review from your elders.
 #
 
-if [ -d /opt/habitat-mac-bootstrapper ]; then
-  rm -rf /opt/habitat-mac-bootstrapper
+if [ -d /opt/mac-bootstrapper ]; then
+  rm -rf /opt/mac-bootstrapper
 fi
 
 echo "The Habitat macOS Bootstrapper has been removed"

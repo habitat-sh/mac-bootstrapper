@@ -17,7 +17,7 @@
 
 # We use the version in util-linux, and only build the libuuid subdirectory
 name "libsodium"
-default_version "1.0.16"
+default_version "1.0.17"
 
 license "ISC"
 license_file "LICENSE"
@@ -32,6 +32,9 @@ unless windows?
 end
 
 # perhaps use git https://github.com/jedisct1/libsodium/
+version "1.0.17" do
+  source sha256: "0cc3dae33e642cc187b5ceb467e0ad0e1b51dcba577de1190e9ffa17766ac2b1"
+end
 version "1.0.16" do
   source sha256: "eeadc7e1e1bcef09680fb4837d448fbdf57224978f865ac1c16745868fbd0533"
 end
