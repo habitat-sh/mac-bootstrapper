@@ -1,0 +1,4 @@
+.bundle
+.vscode
+# We always want to ride latest omnibus
+Gemfile.lock
