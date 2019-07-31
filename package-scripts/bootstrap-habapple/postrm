@@ -1,0 +1,17 @@
+#!/bin/sh
+# WARNING: REQUIRES /bin/sh
+#
+# - must run on /bin/sh on solaris 9
+# - must run on /bin/sh on AIX 6.x
+# - if you think you are a bash wizard, you probably do not understand
+#   this programming language.  do not touch.
+# - if you are under 40, get peer review from your elders.
+#
+
+if [ -d /opt/habitat-mac-bootstrapper ]; then
+  rm -rf /opt/habitat-mac-bootstrapper
+fi
+
+echo "The Habitat macOS Bootstrapper has been removed"
+
+exit 0

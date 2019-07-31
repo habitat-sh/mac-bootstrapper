@@ -1,0 +1,23 @@
+#!/bin/sh
+# WARNING: REQUIRES /bin/sh
+#
+# - must run on /bin/sh on solaris 9
+# - must run on /bin/sh on AIX 6.x
+# - if you think you are a bash wizard, you probably do not understand
+#   this programming language.  do not touch.
+# - if you are under 40, get peer review from your elders.
+#
+PROGNAME=`basename $0`
+
+error_exit()
+{
+  echo "${PROGNAME}: ${1:-"Unknown Error"}" 1>&2
+  exit 1
+}
+
+# Create alias gtar -> tar
+ln -sf /opt/habitat-mac-bootstrapper/embedded/bin/tar /opt/habitat-mac-bootstrapper/bin/gtar || error_exit "Cannot link tar to /opt/habitat-mac-bootstrapper/bin"
+
+echo "Thank you for installing the Habitat macOS Bootstrapper!"
+
+exit 0

@@ -1,0 +1,29 @@
+slack:
+  notify_channel: habitat-notify
+
+github:
+  delete_branch_on_merge: true
+  version_file: "VERSION"
+  version_tag_format: '{{version}}'
+  changelog_file: "CHANGELOG.md"
+
+pipelines:
+  - verify
+  - omnibus/build:
+      description: Build/Test mac bootstrapper
+      definition: .expeditor/build.omnibus.yml
+
+subscriptions:
+  - workload: pull_request_merged:{{agent_id}}:*
+    actions:
+      - built_in:bump_version:
+          ignore_labels:
+          - 'Expeditor: Skip Version Bump'
+          - 'Expeditor: Skip All'
+      - built_in:update_changelog:
+          ignore_labels:
+          - 'Expeditor: Exclude from Changelog'
+          - 'Expeditor: Skip All'
+      - trigger_pipeline:omnibus/build:
+          only_if: built_in:bump_version
+          post_commit: true
