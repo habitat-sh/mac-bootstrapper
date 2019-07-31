@@ -1,5 +1,4 @@
 # Adding a whitespace change to trigger pipeline generation!
-
 slack:
   notify_channel: habitat-notify
 
