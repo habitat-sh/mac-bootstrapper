@@ -1,5 +1,5 @@
 #
-# Copyright 2018, Chef Software, Inc.
+# Copyright 2016 Chef Software, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,24 +14,15 @@
 # limitations under the License.
 #
 
-name "mac-bootstrapper"
-default_version "1.0.0"
+name "jq"
+default_version "1.6"
 
-license :project_license
+version("1.6") { source sha256: "5c0a0a3ea600f302ee458b30317425dd9632d1ad8882259fcaf4e9b868b2b1ef" }
 
-dependency "bash"
-dependency "gtar"
-dependency "libiconv"
-dependency "libsodium"
-dependency "bzip2"
-dependency "xz"
-dependency "openssl"
-dependency "libarchive"
-dependency "expat"
-dependency "coreutils"
-dependency "cacerts"
-dependency "rq"
-dependency "jq"
+license "MIT"
+license_file "COPYING"
+source url: "https://github.com/stedolan/jq/releases/download/jq-#{version}/jq-osx-amd64"
 
-# Libcharset is safe to rely on as it's part of OSX
-whitelist_file /libarchive\..+/
+build do
+  copy "#{project_dir}/jq-osx-amd64", "#{install_dir}/embedded/bin/jq"
+end
