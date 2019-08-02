@@ -40,7 +40,6 @@ build do
   update_config_guess(target: "build-aux")
   update_config_guess(target: "libcharset/build-aux")
 
-
   configure_command = [
     "./configure",
     "--prefix=#{install_dir}/embedded",

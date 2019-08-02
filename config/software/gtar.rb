@@ -48,18 +48,17 @@ build do
   elsif osx?
     # lovingly borrowed from the awesome Homebrew project, thank you!
     # https://github.com/Homebrew/homebrew-core/blob/de3b1aeec9cc8d36f849b0ae959ee4b7f6610c1f/Formula/gnu-tar.rb
-#    patch source: "gnutar-configure-xattrs.patch", env: env
     env["gl_cv_func_getcwd_abort_bug"] = "no"
   elsif aix?
     if version.satisfies?("<= 1.28")
       # AIX has a gross patch that is required since xlc gets confused by too many #ifndefs
       patch_env = env.dup
-      patch_env["PATH"] = "/opt/freeware/bin:#{env['PATH']}"
+      patch_env["PATH"] = "/opt/freeware/bin:#{env["PATH"]}"
       patch source: "aix_ifndef.patch", plevel: 0, env: patch_env
     elsif version.satisfies?("> 1.28")
       # xlc doesn't allow duplicate entries in case statements
       patch_env = env.dup
-      patch_env["PATH"] = "/opt/freeware/bin:#{env['PATH']}"
+      patch_env["PATH"] = "/opt/freeware/bin:#{env["PATH"]}"
       patch source: "aix_extra_case.patch", plevel: 0, env: patch_env
     end
   end

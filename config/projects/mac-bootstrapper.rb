@@ -42,6 +42,6 @@ exclude '\.git*'
 exclude 'bundler\/git'
 
 package :pkg do
-  identifier 'com.getchef.pkg.mac-bootstrapper'
+  identifier "com.getchef.pkg.mac-bootstrapper"
 end
 compress :dmg

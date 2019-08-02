@@ -32,7 +32,6 @@ source url: "http://www.libarchive.org/downloads/libarchive-#{version}.tar.gz"
 relative_path "libarchive-#{version}"
 
 dependency "config_guess"
-#dependency "libxml2"
 dependency "bzip2"
 dependency "zlib"
 dependency "liblzma"
