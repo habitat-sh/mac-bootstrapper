@@ -26,4 +26,5 @@ source url: "https://github.com/dflemstr/rq/releases/download/v#{version}/rq-x86
 
 build do
   copy "#{project_dir}/rq-x86_64-apple-darwin", "#{install_dir}/embedded/bin/rq"
+  command "chmod +x #{install_dir}/embedded/bin/rq"
 end
