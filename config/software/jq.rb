@@ -25,4 +25,5 @@ source url: "https://github.com/stedolan/jq/releases/download/jq-#{version}/jq-o
 
 build do
   copy "#{project_dir}/jq-osx-amd64", "#{install_dir}/embedded/bin/jq"
+  command "chmod +x #{install_dir}/embedded/bin/jq"
 end
