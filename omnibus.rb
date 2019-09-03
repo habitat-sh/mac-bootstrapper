@@ -38,15 +38,15 @@ windows_arch   env_omnibus_windows_arch
 # Enable S3 asset caching
 # ------------------------------
 use_s3_caching true
-s3_access_key  ENV['AWS_ACCESS_KEY_ID']
-s3_secret_key  ENV['AWS_SECRET_ACCESS_KEY']
-s3_bucket      'opscode-omnibus-cache'
+s3_access_key  ENV["AWS_ACCESS_KEY_ID"]
+s3_secret_key  ENV["AWS_SECRET_ACCESS_KEY"]
+s3_bucket      "opscode-omnibus-cache"
 
 # Customize compiler bits
 # ------------------------------
 build_retries 0
 fetcher_read_timeout 120
-#workers 10
+workers 10
 
 # Load additional software
 # ------------------------------
