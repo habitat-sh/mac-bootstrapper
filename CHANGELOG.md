@@ -2,17 +2,18 @@ habitat-mac-bootstrapper CHANGELOG
 ==========================
 This file is used to list changes made in each version of the habitat-mac-bootstrapper.
 
-<!-- latest_release 1.0.9 -->
-## [1.0.9](https://github.com/habitat-sh/mac-bootstrapper/tree/1.0.9) (2019-12-02)
+<!-- latest_release 1.0.10 -->
+## [1.0.10](https://github.com/habitat-sh/mac-bootstrapper/tree/1.0.10) (2019-12-12)
 
 #### Merged Pull Requests
-- Remove me from codeowners [#11](https://github.com/habitat-sh/mac-bootstrapper/pull/11) ([scotthain](https://github.com/scotthain))
+- Upgrade builder to 10.13 [#10](https://github.com/habitat-sh/mac-bootstrapper/pull/10) ([jaymalasinha](https://github.com/jaymalasinha))
 <!-- latest_release -->
 
 <!-- release_rollup -->
 ### Changes since latest stable release
 
 #### Merged Pull Requests
+- Upgrade builder to 10.13 [#10](https://github.com/habitat-sh/mac-bootstrapper/pull/10) ([jaymalasinha](https://github.com/jaymalasinha)) <!-- 1.0.10 -->
 - Remove me from codeowners [#11](https://github.com/habitat-sh/mac-bootstrapper/pull/11) ([scotthain](https://github.com/scotthain)) <!-- 1.0.9 -->
 - Add linting and modernize repo [#7](https://github.com/habitat-sh/mac-bootstrapper/pull/7) ([scotthain](https://github.com/scotthain)) <!-- 1.0.8 -->
 - Fix permissions on scripts (jq, rq) [#9](https://github.com/habitat-sh/mac-bootstrapper/pull/9) ([scotthain](https://github.com/scotthain)) <!-- 1.0.7 -->
