@@ -43,5 +43,6 @@ exclude 'bundler\/git'
 
 package :pkg do
   identifier "com.getchef.pkg.mac-bootstrapper"
+  signing_identity "Chef Software, Inc. (EU3VF8YLX2)"
 end
 compress :dmg
