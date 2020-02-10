@@ -2,6 +2,9 @@
 slack:
   notify_channel: habitat-notify
 
+product_key:
+  - mac-bootstrapper
+
 github:
   delete_branch_on_merge: true
   version_file: "VERSION"
@@ -13,6 +16,12 @@ pipelines:
   - omnibus/build:
       description: Build/Test mac bootstrapper
       definition: .expeditor/build.omnibus.yml
+
+promote:
+  channels:
+    - unstable
+    - current
+    - stable
 
 subscriptions:
   - workload: pull_request_merged:{{agent_id}}:*
@@ -28,3 +37,8 @@ subscriptions:
       - trigger_pipeline:omnibus/build:
           only_if: built_in:bump_version
           post_commit: true
+
+  # Subscribe to the promotion from the current channel to stable
+  - workload: project_promoted:{{agent_id}}:*
+    actions:
+      - built_in:promote_artifactory_artifact
