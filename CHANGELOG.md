@@ -2,17 +2,18 @@ habitat-mac-bootstrapper CHANGELOG
 ==========================
 This file is used to list changes made in each version of the habitat-mac-bootstrapper.
 
-<!-- latest_release 1.0.11 -->
-## [1.0.11](https://github.com/habitat-sh/mac-bootstrapper/tree/1.0.11) (2020-02-12)
+<!-- latest_release 1.0.12 -->
+## [1.0.12](https://github.com/habitat-sh/mac-bootstrapper/tree/1.0.12) (2020-02-20)
 
 #### Merged Pull Requests
-- Add promote channels [#13](https://github.com/habitat-sh/mac-bootstrapper/pull/13) ([jaymalasinha](https://github.com/jaymalasinha))
+- Updates for macOS Notarization [#14](https://github.com/habitat-sh/mac-bootstrapper/pull/14) ([jaymalasinha](https://github.com/jaymalasinha))
 <!-- latest_release -->
 
 <!-- release_rollup -->
 ### Changes since latest stable release
 
 #### Merged Pull Requests
+- Updates for macOS Notarization [#14](https://github.com/habitat-sh/mac-bootstrapper/pull/14) ([jaymalasinha](https://github.com/jaymalasinha)) <!-- 1.0.12 -->
 - Add promote channels [#13](https://github.com/habitat-sh/mac-bootstrapper/pull/13) ([jaymalasinha](https://github.com/jaymalasinha)) <!-- 1.0.11 -->
 - Upgrade builder to 10.13 [#10](https://github.com/habitat-sh/mac-bootstrapper/pull/10) ([jaymalasinha](https://github.com/jaymalasinha)) <!-- 1.0.10 -->
 - Remove me from codeowners [#11](https://github.com/habitat-sh/mac-bootstrapper/pull/11) ([scotthain](https://github.com/scotthain)) <!-- 1.0.9 -->
