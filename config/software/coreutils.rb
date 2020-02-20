@@ -26,6 +26,10 @@ license_file "COPYING"
 
 source url: "http://ftp.gnu.org/gnu/coreutils/coreutils-#{version}.tar.xz"
 
+# coreutils builds its libraries into a special directory. We need to include
+# that directory in lib_dirs so omnibus can sign them during macOS deep signing.
+lib_dirs lib_dirs.concat ["#{install_dir}/embedded/libexec/coreutils"]
+
 relative_path "coreutils-#{version}"
 
 build do
