@@ -2,17 +2,18 @@ habitat-mac-bootstrapper CHANGELOG
 ==========================
 This file is used to list changes made in each version of the habitat-mac-bootstrapper.
 
-<!-- latest_release 1.0.13 -->
-## [1.0.13](https://github.com/habitat-sh/mac-bootstrapper/tree/1.0.13) (2020-05-01)
+<!-- latest_release 1.0.14 -->
+## [1.0.14](https://github.com/habitat-sh/mac-bootstrapper/tree/1.0.14) (2020-12-18)
 
 #### Merged Pull Requests
-- Update libarchive to match core-plans [#12](https://github.com/habitat-sh/mac-bootstrapper/pull/12) ([smacfarlane](https://github.com/smacfarlane))
+- Remove smacfarlane from CODEOWNERS [#16](https://github.com/habitat-sh/mac-bootstrapper/pull/16) ([christophermaier](https://github.com/christophermaier))
 <!-- latest_release -->
 
 <!-- release_rollup since=1.0.12 -->
 ### Changes since latest stable release
 
 #### Merged Pull Requests
+- Remove smacfarlane from CODEOWNERS [#16](https://github.com/habitat-sh/mac-bootstrapper/pull/16) ([christophermaier](https://github.com/christophermaier)) <!-- 1.0.14 -->
 - Update libarchive to match core-plans [#12](https://github.com/habitat-sh/mac-bootstrapper/pull/12) ([smacfarlane](https://github.com/smacfarlane)) <!-- 1.0.13 -->
 - Updates for macOS Notarization [#14](https://github.com/habitat-sh/mac-bootstrapper/pull/14) ([jaymalasinha](https://github.com/jaymalasinha)) <!-- 1.0.12 -->
 - Add promote channels [#13](https://github.com/habitat-sh/mac-bootstrapper/pull/13) ([jaymalasinha](https://github.com/jaymalasinha)) <!-- 1.0.11 -->
