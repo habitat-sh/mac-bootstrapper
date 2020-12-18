@@ -42,8 +42,7 @@ build do
     configure_command << " --without-selinux"
   end
 
-  if nexus? || ios_xr? || s390x?
-    # ios_xr and nexus don't support posix acls
+  if s390x?
     configure_command << " --without-posix-acls"
   elsif osx?
     # lovingly borrowed from the awesome Homebrew project, thank you!
