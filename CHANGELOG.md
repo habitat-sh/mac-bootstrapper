@@ -2,17 +2,18 @@ habitat-mac-bootstrapper CHANGELOG
 ==========================
 This file is used to list changes made in each version of the habitat-mac-bootstrapper.
 
-<!-- latest_release 1.0.15 -->
-## [1.0.15](https://github.com/habitat-sh/mac-bootstrapper/tree/1.0.15) (2020-12-18)
+<!-- latest_release 1.0.16 -->
+## [1.0.16](https://github.com/habitat-sh/mac-bootstrapper/tree/1.0.16) (2020-12-18)
 
 #### Merged Pull Requests
-- Remove `nexus?` and `ios_xr?` method calls [#18](https://github.com/habitat-sh/mac-bootstrapper/pull/18) ([christophermaier](https://github.com/christophermaier))
+- Use conventional ADHOC pipeline definition [#20](https://github.com/habitat-sh/mac-bootstrapper/pull/20) ([christophermaier](https://github.com/christophermaier))
 <!-- latest_release -->
 
 <!-- release_rollup since=1.0.12 -->
 ### Changes since latest stable release
 
 #### Merged Pull Requests
+- Use conventional ADHOC pipeline definition [#20](https://github.com/habitat-sh/mac-bootstrapper/pull/20) ([christophermaier](https://github.com/christophermaier)) <!-- 1.0.16 -->
 - Remove `nexus?` and `ios_xr?` method calls [#18](https://github.com/habitat-sh/mac-bootstrapper/pull/18) ([christophermaier](https://github.com/christophermaier)) <!-- 1.0.15 -->
 - Remove smacfarlane from CODEOWNERS [#16](https://github.com/habitat-sh/mac-bootstrapper/pull/16) ([christophermaier](https://github.com/christophermaier)) <!-- 1.0.14 -->
 - Update libarchive to match core-plans [#12](https://github.com/habitat-sh/mac-bootstrapper/pull/12) ([smacfarlane](https://github.com/smacfarlane)) <!-- 1.0.13 -->
