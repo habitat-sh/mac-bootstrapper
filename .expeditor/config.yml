@@ -37,9 +37,8 @@ subscriptions:
           ignore_labels:
           - 'Expeditor: Exclude from Changelog'
           - 'Expeditor: Skip All'
-      - trigger_pipeline:omnibus/build:
+      - trigger_pipeline:omnibus/release:
           only_if: built_in:bump_version
-          post_commit: true
 
   # Subscribe to the promotion from the current channel to stable
   - workload: project_promoted:{{agent_id}}:*
