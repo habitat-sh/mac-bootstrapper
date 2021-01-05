@@ -5,6 +5,9 @@ slack:
 product_key:
   - mac-bootstrapper
 
+project:
+  alias: "mac-bootstrapper"
+
 github:
   delete_branch_on_merge: true
   version_file: "VERSION"
