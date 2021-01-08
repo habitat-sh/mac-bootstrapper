@@ -2,17 +2,18 @@ habitat-mac-bootstrapper CHANGELOG
 ==========================
 This file is used to list changes made in each version of the habitat-mac-bootstrapper.
 
-<!-- latest_release 1.1.1 -->
-## [1.1.1](https://github.com/habitat-sh/mac-bootstrapper/tree/1.1.1) (2021-01-05)
+<!-- latest_release 1.1.2 -->
+## [1.1.2](https://github.com/habitat-sh/mac-bootstrapper/tree/1.1.2) (2021-01-08)
 
 #### Merged Pull Requests
-- Add project alias [#22](https://github.com/habitat-sh/mac-bootstrapper/pull/22) ([christophermaier](https://github.com/christophermaier))
+- Remove christophermaier as a code owner [#23](https://github.com/habitat-sh/mac-bootstrapper/pull/23) ([christophermaier](https://github.com/christophermaier))
 <!-- latest_release -->
 
 <!-- release_rollup since=1.0.12 -->
 ### Changes since latest stable release
 
 #### Merged Pull Requests
+- Remove christophermaier as a code owner [#23](https://github.com/habitat-sh/mac-bootstrapper/pull/23) ([christophermaier](https://github.com/christophermaier)) <!-- 1.1.2 -->
 - Add project alias [#22](https://github.com/habitat-sh/mac-bootstrapper/pull/22) ([christophermaier](https://github.com/christophermaier)) <!-- 1.1.1 -->
 - Pull what software we can from shared omnibus-software recipes [#19](https://github.com/habitat-sh/mac-bootstrapper/pull/19) ([christophermaier](https://github.com/christophermaier)) <!-- 1.1.0 -->
 - Trigger the renamed pipeline again [#21](https://github.com/habitat-sh/mac-bootstrapper/pull/21) ([christophermaier](https://github.com/christophermaier)) <!-- 1.0.17 -->
