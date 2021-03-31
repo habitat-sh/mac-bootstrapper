@@ -5,7 +5,6 @@ license :project_license
 
 dependency "bash"
 dependency "gtar"
-dependency "libiconv"
 dependency "libsodium"
 dependency "bzip2"
 dependency "xz"
