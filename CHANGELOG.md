@@ -2,17 +2,18 @@ habitat-mac-bootstrapper CHANGELOG
 ==========================
 This file is used to list changes made in each version of the habitat-mac-bootstrapper.
 
-<!-- latest_release 1.1.4 -->
-## [1.1.4](https://github.com/habitat-sh/mac-bootstrapper/tree/1.1.4) (2021-03-31)
+<!-- latest_release 1.1.5 -->
+## [1.1.5](https://github.com/habitat-sh/mac-bootstrapper/tree/1.1.5) (2021-04-01)
 
 #### Merged Pull Requests
-- update to macos 10.15 [#25](https://github.com/habitat-sh/mac-bootstrapper/pull/25) ([mwrock](https://github.com/mwrock))
+- delete iconv library aquired via bash dep [#26](https://github.com/habitat-sh/mac-bootstrapper/pull/26) ([mwrock](https://github.com/mwrock))
 <!-- latest_release -->
 
 <!-- release_rollup since=1.0.12 -->
 ### Changes since latest stable release
 
 #### Merged Pull Requests
+- delete iconv library aquired via bash dep [#26](https://github.com/habitat-sh/mac-bootstrapper/pull/26) ([mwrock](https://github.com/mwrock)) <!-- 1.1.5 -->
 - update to macos 10.15 [#25](https://github.com/habitat-sh/mac-bootstrapper/pull/25) ([mwrock](https://github.com/mwrock)) <!-- 1.1.4 -->
 - remove libiconv dependency [#24](https://github.com/habitat-sh/mac-bootstrapper/pull/24) ([mwrock](https://github.com/mwrock)) <!-- 1.1.3 -->
 - Remove christophermaier as a code owner [#23](https://github.com/habitat-sh/mac-bootstrapper/pull/23) ([christophermaier](https://github.com/christophermaier)) <!-- 1.1.2 -->
