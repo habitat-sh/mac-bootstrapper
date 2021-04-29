@@ -2,17 +2,18 @@ habitat-mac-bootstrapper CHANGELOG
 ==========================
 This file is used to list changes made in each version of the habitat-mac-bootstrapper.
 
-<!-- latest_release 1.1.6 -->
-## [1.1.6](https://github.com/habitat-sh/mac-bootstrapper/tree/1.1.6) (2021-04-02)
+<!-- latest_release 1.1.7 -->
+## [1.1.7](https://github.com/habitat-sh/mac-bootstrapper/tree/1.1.7) (2021-04-29)
 
 #### Merged Pull Requests
-- delete in build [#27](https://github.com/habitat-sh/mac-bootstrapper/pull/27) ([mwrock](https://github.com/mwrock))
+- updating Gemfile to support environment variables [#28](https://github.com/habitat-sh/mac-bootstrapper/pull/28) ([jayashrig158](https://github.com/jayashrig158))
 <!-- latest_release -->
 
 <!-- release_rollup since=1.0.12 -->
 ### Changes since latest stable release
 
 #### Merged Pull Requests
+- updating Gemfile to support environment variables [#28](https://github.com/habitat-sh/mac-bootstrapper/pull/28) ([jayashrig158](https://github.com/jayashrig158)) <!-- 1.1.7 -->
 - delete in build [#27](https://github.com/habitat-sh/mac-bootstrapper/pull/27) ([mwrock](https://github.com/mwrock)) <!-- 1.1.6 -->
 - delete iconv library aquired via bash dep [#26](https://github.com/habitat-sh/mac-bootstrapper/pull/26) ([mwrock](https://github.com/mwrock)) <!-- 1.1.5 -->
 - update to macos 10.15 [#25](https://github.com/habitat-sh/mac-bootstrapper/pull/25) ([mwrock](https://github.com/mwrock)) <!-- 1.1.4 -->
