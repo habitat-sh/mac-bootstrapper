@@ -1,4 +1,5 @@
 .bundle
-.vscode
+.vscode/*
+!.vscode/mcp.json
 # We always want to ride latest omnibus
 Gemfile.lock
