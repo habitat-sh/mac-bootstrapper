@@ -2,17 +2,18 @@ habitat-mac-bootstrapper CHANGELOG
 ==========================
 This file is used to list changes made in each version of the habitat-mac-bootstrapper.
 
-<!-- latest_release 1.1.8 -->
-## [1.1.8](https://github.com/habitat-sh/mac-bootstrapper/tree/1.1.8) (2022-02-09)
+<!-- latest_release 1.1.9 -->
+## [1.1.9](https://github.com/habitat-sh/mac-bootstrapper/tree/1.1.9) (2025-10-24)
 
 #### Merged Pull Requests
-- replace master branch with main [#30](https://github.com/habitat-sh/mac-bootstrapper/pull/30) ([jayashrig158](https://github.com/jayashrig158))
+- add ai assisted instructions [#33](https://github.com/habitat-sh/mac-bootstrapper/pull/33) ([dikshagupta1](https://github.com/dikshagupta1))
 <!-- latest_release -->
 
 <!-- release_rollup since=1.0.12 -->
 ### Changes since latest stable release
 
 #### Merged Pull Requests
+- add ai assisted instructions [#33](https://github.com/habitat-sh/mac-bootstrapper/pull/33) ([dikshagupta1](https://github.com/dikshagupta1)) <!-- 1.1.9 -->
 - replace master branch with main [#30](https://github.com/habitat-sh/mac-bootstrapper/pull/30) ([jayashrig158](https://github.com/jayashrig158)) <!-- 1.1.8 -->
 - updating Gemfile to support environment variables [#28](https://github.com/habitat-sh/mac-bootstrapper/pull/28) ([jayashrig158](https://github.com/jayashrig158)) <!-- 1.1.7 -->
 - delete in build [#27](https://github.com/habitat-sh/mac-bootstrapper/pull/27) ([mwrock](https://github.com/mwrock)) <!-- 1.1.6 -->
