@@ -63,12 +63,13 @@ When prompted to create a PR:
 1. Use GitHub CLI to create a new branch with the Jira ID as the branch name
 2. Commit and push changes to the branch
 3. Create the PR using GitHub CLI
-4. Add the label `"runtest:all:stable"` to the PR
+4. Add the labels `"runtest:all:stable"` and `"ai-assisted"` to the PR
 5. PR description must:
    - Include a comprehensive summary of changes using HTML tags
    - Reference the Jira ticket
    - List all modified files and their purposes
    - Include testing information
+   - Include the mandatory disclosure: "This work was completed with AI assistance following Progress AI policies"
 
 ### Prompt-Based Workflow
 - All tasks must be prompt-based and interactive
@@ -127,11 +128,22 @@ When prompted to create a PR:
    - Commit changes with descriptive messages
    - Push to remote branch
    - Create PR with comprehensive description using HTML tags
-   - Add `"runtest:all:stable"` label
-   - **Prompt**: "PR created successfully. Workflow complete!"
+   - Add `"runtest:all:stable"` and `"ai-assisted"` labels
+   - **Prompt**: "PR created successfully. Next step: Update JIRA ticket. Continue?"
+
+### Phase 5: JIRA Ticket Update (Mandatory)
+8. **Update JIRA Ticket**
+   - Use atlassian-mcp-server to update the JIRA ticket
+   - Set custom field customfield_11170 ("Does this Work Include AI Assisted Code?") to "Yes"
+   - Use correct field format: {"customfield_11170": {"value": "Yes"}}
+   - Verify the field update was successful
+   - **Prompt**: "JIRA ticket updated successfully. Workflow complete!"
 
 ## GitHub CLI Commands for PR Creation
 ```bash
+# Create ai-assisted label (run once per repository)
+gh label create "ai-assisted" --color "9A4DFF" --description "Work completed with AI assistance following Progress AI policies" --force
+
 # Create and switch to new branch
 gh repo clone habitat-sh/mac-bootstrapper
 cd mac-bootstrapper
@@ -142,8 +154,8 @@ git add .
 git commit -m "[JIRA-ID] Descriptive commit message"
 git push origin [JIRA-ID]
 
-# Create PR with label
-gh pr create --title "[JIRA-ID] Brief description" --body "$(cat pr_description.html)" --label "runtest:all:stable"
+# Create PR with labels
+gh pr create --title "[JIRA-ID] Brief description" --body "$(cat pr_description.html)" --label "runtest:all:stable" --label "ai-assisted"
 ```
 
 ## Project-Specific Guidelines
